@@ -1,11 +1,12 @@
 name: CI
 
-on:
-  pull_request:
-
-  push:
-    branches: [ main, 1.x, 0.1x ]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+# 
+#   push:
+#     branches: [ main, 1.x, 0.1x ]
+# 
 env:
   GIT_COMMIT_SHA: ${{ github.sha }}
   GIT_BRANCH: ${{ github.ref }}
